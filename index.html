@@ -9,24 +9,63 @@
   <body>
     <header class="main-header">
       <nav class="navigation">
+
+        <a class="header-logo-link logo-link-current">
+          <img src="images/logo.svg" alt="Логотип сайта Девайс." width="145" height="46" class="header-logo-image">
+        </a>
+
         <form action="get" class="navigation-form">
           <label>
             <input class="navigation-search" type="text" placeholder="Поиск по сайту">
             <a class="search-button button" href="#">Найти</a>
             <span class="search-image"></span>
         </form>
-        <ul class="navigation-site-list">
-          <li class="navigation-site-item">
-            <a href="#" class="navigation-site-link">Каталог товаров</a>
-            <button class="button-detailed" type="button">
-              <span class="visually-hidden">Подробнее</span>
-              <span class="image-detailed"></span>
-            </button>
-            <ul class="products-list-detailed">
-              <li class="products-item">Виртуальная реальность</li>
-            </ul>
 
+        <ul class="user-navigation">
+          <li class="user-navigation-item">
+            <a href="#" class="user-navigation-link">Войти</a>
           </li>
+        </ul>
+
+        <ul class="products-navigation-list">
+          <li class="products-navigation-item">
+            <a href="#" class="product-navigation-link">Сравнить</a>
+          </li>
+          <li class="products-navigation-item">
+            <a href="#" class="product-navigation-link">Корзина</a>
+          </li>
+        </ul>
+
+        <div class="navigation-catalog">
+          <a href="#" class="navigation-catalog-link">Каталог товаров</a>
+          <button class="button-detailed" type="button">
+            <span class="visually-hidden">Категории товаров</span>
+            <span class="image-detailed"></span>
+          </button>
+
+          <ul class="products-list-detailed">
+            <li class="products-item">
+              <a href="#" class="products-item-link">Виртуальная реальность</a>
+            </li>
+            <li class="products-item">
+              <a href="#" class="products-item-link">Моноподы для селфи</a>
+            </li>
+            <li class="products-item">
+              <a href="#" class="products-item-link">Экшн-камеры</a>
+            </li>
+            <li class="products-item">
+              <a href="#" class="products-item-link">Фитнес-браслеты</a>
+            </li>
+            <li class="products-item">
+              <a href="#" class="products-item-link">Умные часы</a>
+            </li>
+            <li class="products-item">
+              <a href="#" class="products-item-link">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="navigation-site-list">
           <li class="navigation-site-item">
             <a href="#" class="navigation-site-link">Доставка</a>
           </li>
@@ -37,6 +76,7 @@
             <a href="#" class="navigation-site-link">Доставка</a>
           </li>
         </ul>
+
       </nav>
     </header>
   </body>
