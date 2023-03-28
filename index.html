@@ -53,7 +53,7 @@
                       d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z" />
                   </svg>
                   <span class="navigation-basket">Корзина</span>
-                  <span class="basket-quantity" aria-label="Количество товаров.">2</span>
+                  <span class="basket-quantity">2</span>
                 </a>
 
               </li>
@@ -112,17 +112,17 @@
           <h2 class="visually-hidden">Популярняе товары</h2>
           <div class="slider">
             <div class="slider-window">
-              <ul class="sliders-list">
-                <li class="sliders-item">
-                  <div class="sliders-image-block">
+              <ul class="slider-list">
+                <li class="slider-item slider-item-current">
+                  <div class="slider-image-block">
                     <img src="./images/products/slider-1.png" alt="Квадрокоптер." class="slaide-image" width="560"
                       height="560">
                   </div>
-                  <div class="sliders-text-block">
-                    <p class="sliders-heading">Порхает как бабочка, жалит как пчела!</p>
-                    <p class="sliders-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+                  <div class="slider-text-block">
+                    <p class="slider-heading heading">Порхает как бабочка, жалит как пчела!</p>
+                    <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                       замаскированным под стандартную камеру.</p>
-                    <a href="#" class="sliders-button-detailed button">Подробнее</a>
+                    <a href="#" class="slider-button-detailed button">Подробнее</a>
                     <ul class="product-characteristics-list">
                       <li class="product-characteristics-item">
                         <p class="product-characteristics-meaning">800 м</p>
@@ -135,16 +135,16 @@
                     </ul>
                   </div>
                 </li>
-                <li class="sliders-item">
-                  <div class="sliders-image-block">
+                <li class="slider-item">
+                  <div class="slider-image-block">
                     <img src="./images/products/slider-2.png" alt="Фитнес-браслет" class="slide-image" width="560"
                       height="560">
                   </div>
-                  <div class="sliders-text-block">
-                    <p class="sliders-heading">Худеем правильно!</p>
-                    <p class="sliders-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
+                  <div class="slider-text-block">
+                    <p class="slider-heading heading">Худеем правильно!</p>
+                    <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
                       занятия и соблюдать диету.</p>
-                    <a href="#" class="sliders-button-detailed button">Подробнее</a>
+                    <a href="#" class="slider-button-detailed button">Подробнее</a>
                     <ul class="product-characteristics-list">
                       <li class="product-characteristics-item">
                         <p class="product-characteristics-meaning">48 часов</p>
@@ -153,16 +153,16 @@
                     </ul>
                   </div>
                 </li>
-                <li class="sliders-item">
-                  <div class="sliders-image-block">
+                <li class="slider-item">
+                  <div class="slider-image-block">
                     <img src="./images/products/slider-3.png" alt="Селфи-палка." class="slide-image" width="560"
                       height="560">
                   </div>
-                  <div class="sliders-text-block">
-                    <p class="sliders-heading">Делай селфи, как Бен Стиллер!</p>
-                    <p class="sliders-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь
+                  <div class="slider-text-block">
+                    <p class="slider-heading heading">Делай селфи, как Бен Стиллер!</p>
+                    <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь
                       (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-                    <a href="#" class="sliders-button-detailed button">Подробнее</a>
+                    <a href="#" class="slider-button-detailed button">Подробнее</a>
                     <ul class="product-characteristics-list">
                       <li class="product-characteristics-item">
                         <p class="product-characteristics-meaning">8,5 м</p>
@@ -184,17 +184,17 @@
             <ol class="slider-paganation">
               <li class="slider-pagination-item">
                 <button class="slider-paganation-button" type="button">
-                  <span class="visually-hidden">Первый экран слайдера</span>
+                  <span class="visually-hidden">Показать первый слайдер</span>
                 </button>
               </li>
               <li class="slider-pagination-item">
                 <button class="slider-paganation-button" type="button">
-                  <span class="visually-hidden">Второй экран слайдера</span>
+                  <span class="visually-hidden">Показать второй слайдер</span>
                 </button>
               </li>
               <li class="slider-pagination-item">
                 <button class="slider-paganation-button" type="button">
-                  <span class="visually-hidden">Третий экран слайдера</span>
+                  <span class="visually-hidden">Показать третий слайдер</span>
                 </button>
               </li>
             </ol>
@@ -235,6 +235,47 @@
             </li>
           </ul>
         </section>
+        <section class="adding">
+          <h2 class="visually-hidden">Дополнительные услуги</h2>
+          <div class="slider-adding">
+            <div class="slider-adding-window">
+              <ul class="slider-adding-list">
+                <li class="slider-adding-item">
+                  <h3 class="slider-heading heading">Доставка</h3>
+                  <p class="slider-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
+                    бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                </li>
+                <li class="slider-adding-item">
+                  <h3 class="slider-heading heading">Гарантия</h3>
+                  <p class="slider-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
+                    переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+                </li>
+                <li class="slider-adding-item">
+                  <h3 class="slider-heading heading">Кредит</h3>
+                  <p class="slider-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для
+                    вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+                </li>
+              </ul>
+              <ol class="slider-adding-paganation">
+                <li class="slider-adding-item">
+                  <a href="#" class="adding-slider-button">Доставка</a>
+                </li>
+                <li class="slider-adding-item">
+                  <a href="#" class="adding-slider-button">Гарантия</a>
+                </li>
+                <li class="slider-adding-item">
+                  <a href="#" class="adding-slider-button">Кредит</a>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </section>
+        <div class="about-block">
+          <section class="about">
+
+          </section>
+          <section class="contacts"></section>
+        </div>
       </main>
     </div>
   </body>
