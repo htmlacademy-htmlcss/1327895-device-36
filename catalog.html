@@ -43,7 +43,6 @@
           </div>
           <div class="navigation-catalog">
             <a href="#" class="navigation-catalog-link navigation-link">Категории товаров</ф>
-              <span class="image-detailed"></span>
             </a>
             <div class="products-list products-list-close">
               <ul class="products-list-detailed">
@@ -99,10 +98,10 @@
           </li>
         </ol>
         <section class="filter">
-          <h2 class="visually-hidden">Фильтр товаров с характеристиками</h2>
-          <form action="https://echo.htmlacademy.ru/" class="filter-catalog">
-            <h3 class="filter-title">Фильтр:</h3>
-            <div class="filter-range range">
+          <h2 class="filter-title">Фильтр:</h2>
+          <form action="https://echo.htmlacademy.ru/" class="filter-catalog" method="get">
+            <fieldset class="filter-range range">
+              <legend class="filter-name">Стоимость</legend>
               <div class="range-scale">
                 <div class="range-bar" style="left: 0; width: 226px;">
                   <button class="range-button range-button-min button" type="button">
@@ -113,7 +112,21 @@
                   </button>
                 </div>
               </div>
-            </div>
+
+              <div class="filter-wrapper">
+                <label class="filter-control-value">
+                  <span class="filter-control-text">от</span>
+                  <input class="filter-control-min input-text" name="min-price" placeholder="" value="0" type="number">
+                </label>
+
+                <label class="filter__control-value">
+                  <span class="filter__control-text">до</span>
+                  <input class="filter__control-max input-text" name="max-price" placeholder="" value="5000"
+                    type="number">
+                </label>
+              </div>
+
+            </fieldset>
             <fieldset class="filter-group">
               <legend class="filter-name">Цвет</legend>
               <ul class="filter-list">
@@ -155,8 +168,10 @@
             </fieldset>
             <button class="filter-button-submit" type="submit">Показать</button>
           </form>
+        </section>
+        <section class="catalog-sorting-result">
+          <h3 class="catalog-title">Сортировка:</h3>
           <div class="catalog-sorting">
-            <h3 class="catalog-title">Сортировка:</h3>
             <select class="product-sorting" name="sorting">
               <option class="product-classification" value="popular" selected>Популярные</option>
               <option class="product-classification" value="inexpensive">Недорогие</option>
@@ -171,7 +186,9 @@
           </div>
           <ul class="catalog-product-list">
             <li class="catalog-product-item">
-
+              <a href="#" class="catalog-product-link">
+                <img src="/images/products/product-1.jpg" alt="">
+              </a>
             </li>
             <li class="catalog-product-item"></li>
             <li class="catalog-product-item"></li>
