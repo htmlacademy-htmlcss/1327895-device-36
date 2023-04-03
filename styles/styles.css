@@ -239,10 +239,12 @@ body {
 .navigation-catalog {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .navigation-catalog-link {
   position: relative;
+  max-width: 390px;
   z-index: 1;
 }
 
@@ -262,7 +264,7 @@ body {
 }
 
 .navigation-link {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -274,9 +276,10 @@ body {
 
 .products-list {
   display: flex;
+  flex-wrap: wrap;
   position: absolute;
   width: 1160px;
-  box-sizing:border-box;
+  box-sizing: border-box;
   left: 0;
   margin-top: 50px;
   padding-bottom: 55px;
@@ -291,6 +294,7 @@ body {
 .products-list-detailed {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -335,7 +339,39 @@ body {
   line-height: 50px;
 }
 
+.slider {
+  position: relative;
+}
+
 .slider-item {
+  display: none;
+  position: relative;
+  z-index: 10;
+}
+
+ .slider-item::before {
+  content: "01";
+  position: absolute;
+  background-color:#ffe17f;
+  height: 118px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 50px;
+  font-family: "Rubik", sans-serif ;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 118px;
+  color:#ffffff;
+  text-align: right;
+  z-index: 1;
+
+
+}
+
+.slider-item-current {
   display: flex;
 }
 
@@ -344,8 +380,8 @@ body {
   padding: 0;
 }
 
-.slide-image {
-  object-fit: cover;
+.slider-image-block {
+  margin-top: -32px;
 }
 
 .slider-text-block {
@@ -368,13 +404,64 @@ body {
   line-height: 30px;
   color: #444444;
 }
+
 .product-characteristics-list {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
 }
+
 .product-characteristics-meaning {
+  margin: 0;
+  margin-bottom: 17px;
+  padding: 0;
   font-size: 36px;
   line-height: 30px;
+}
+
+.product-characteristics-name {
+  margin: 0;
+  padding: 0;
+}
+
+.slider-button-detailed {
+  display: inline-block;
+  margin-top: 58px;
+  margin-bottom: 60px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 3.6px;
+  color:#000000;
+}
+
+
+.product-characteristics-item {
+  margin: 0;
+  padding: 0;
+}
+
+.slider-button {
+  position: absolute;
+  top: 180px;
+  width: 20px;
+  height: 60px;
+}
+
+.slider-prev {
+  background-image: url(../images/next.svg);
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  left: 30px;
+}
+
+.slider-next {
+  background-image: url(../images/next.svg);
+  background-repeat: no-repeat;
+  left: 540px;
 }
