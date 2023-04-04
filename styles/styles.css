@@ -349,7 +349,7 @@ body {
   z-index: 10;
 }
 
- .slider-item::before {
+ .slider-item:nth-child(1)::before {
   content: "01";
   position: absolute;
   background-color:#ffe17f;
@@ -366,10 +366,50 @@ body {
   line-height: 118px;
   color:#ffffff;
   text-align: right;
-  z-index: 1;
-
-
+  z-index: 9;
 }
+
+.slider-ithem:nth-child(2)::before {
+  content: "02";
+  position: absolute;
+  background-color:#ffe17f;
+  height: 118px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 50px;
+  font-family: "Rubik", sans-serif ;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 118px;
+  color:#ffffff;
+  text-align: right;
+  z-index: 9;
+}
+
+.slider-ithem:nth-child(3)::before {
+  content: "02";
+  position: absolute;
+  background-color:#ffe17f;
+  height: 118px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 50px;
+  font-family: "Rubik", sans-serif ;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 118px;
+  color:#ffffff;
+  text-align: right;
+  z-index: 9;
+}
+
+
 
 .slider-item-current {
   display: flex;
@@ -444,6 +484,7 @@ body {
 .product-characteristics-item {
   margin: 0;
   padding: 0;
+  display: inline-block;
 }
 
 .slider-button {
@@ -451,6 +492,7 @@ body {
   top: 180px;
   width: 20px;
   height: 60px;
+  z-index: 11;
 }
 
 .slider-prev {
@@ -458,10 +500,74 @@ body {
   background-repeat: no-repeat;
   transform: rotate(180deg);
   left: 30px;
+  cursor: pointer;
 }
 
 .slider-next {
   background-image: url(../images/next.svg);
   background-repeat: no-repeat;
   left: 540px;
+  cursor: pointer;
+}
+
+.slider-paganation {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+
+  gap: 32px;
+}
+
+.products-paganation-item {
+  margin: 0;
+  padding: 0;
+}
+
+.slider-paganation-button {
+  margin: 0;
+  padding: 0;
+  width: 12px;
+  height: 12px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 100%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.slider-button-current {
+  background-color:#000000;
+}
+
+.products-categories-list {
+  width: 1160px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+  list-style: none;
+  column-gap: 40px;
+
+}
+
+.products-categories-item {
+  margin: 0;
+  padding: 0;
+
+
+}
+
+.products-categories-link {
+  text-decoration: none;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color:#000000;
 }
