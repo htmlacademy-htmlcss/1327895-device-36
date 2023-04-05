@@ -553,9 +553,14 @@ body {
   background-color: #000000;
 }
 
+.products-categories {
+  margin-bottom: 70px;
+}
+
 .products-categories-list {
   width: 1160px;
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
   padding: 0;
   list-style: none;
@@ -633,22 +638,74 @@ body {
 
 .adding {
   background-color: #F0F0F0;
+  position: relative;
+  z-index: 10;
+}
+.adding::before {
+  content: "";
+  position: absolute;
+  height: 113px;
+  width: 100%;
+  background-color:#ffffff;
+  z-index: 11;
 }
 
 .slider-adding {
+  position: relative;
   display: flex;
   margin: 0 auto;
   width: 1160px;
+  z-index: 12;
 }
 
-.slider-adding-paganation {
-  list-style: none;
+.slider-service-paganation {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 280px;
   margin: 0;
   padding: 0;
+  padding-top: 75px;
+  list-style: none;
+  row-gap: 35px;
+}
+
+
+
+.slider-service-button {
+  display: inline-block;
+  padding: 10px 17px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color:#000000;
+  text-decoration: none;
+
+
 }
 
 .slider-adding-list {
   list-style: none;
   margin: 0;
-  padding: 0
+  padding: 0;
+}
+
+.slider-adding-item {
+  display: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 86px;
+  padding-left: 134px;
+
+
+
+}
+
+.slider-adding-current {
+  display: block;
 }
