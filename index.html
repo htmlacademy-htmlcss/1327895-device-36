@@ -39,7 +39,9 @@
             </ul>
           </div>
           <div class="navigation-catalog">
-            <a href="#" class="navigation-catalog-link navigation-link">Каталог товаров</a>
+            <div class="navigation-dropdown">
+              <a href="#" class="navigation-catalog-link navigation-link">Каталог товаров</a>
+            </div>
             <div class="products-list products-list-close wrapper">
               <ul class="products-list-detailed">
                 <li class="products-item">
@@ -118,7 +120,9 @@
                     <p class="slider-heading heading">Худеем правильно!</p>
                     <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
                       занятия и соблюдать диету.</p>
-                    <a href="#" class="slider-button-detailed button">Подробнее</a>
+                    <a href="#" class="slider-button-detailed button">
+                      <span class="button-name">Подробнее</span>
+                    </a>
                     <ul class="product-characteristics-list">
                       <li class="product-characteristics-item">
                         <p class="product-characteristics-meaning">48 часов</p>
@@ -207,17 +211,19 @@
         <section class="adding">
           <h2 class="visually-hidden">Дополнительные услуги</h2>
           <div class="slider-adding">
-            <ol class="slider-service-paganation">
-              <li class="slider-service-item">
-                <a href="#" class="slider-service-button">Доставка</a>
-              </li>
-              <li class="slider-service-item">
-                <a href="#" class="slider-service-button">Гарантия</a>
-              </li>
-              <li class="slider-service-item">
-                <a href="#" class="slider-service-button">Кредит</a>
-              </li>
-            </ol>
+            <div class="slider-pasganation-block">
+              <ol class="slider-service-paganation">
+                <li class="slider-service-item">
+                  <a href="#" class="slider-service-button">Доставка</a>
+                </li>
+                <li class="slider-service-item">
+                  <a href="#" class="slider-service-button">Гарантия</a>
+                </li>
+                <li class="slider-service-item">
+                  <a href="#" class="slider-service-button">Кредит</a>
+                </li>
+              </ol>
+            </div>
             <ul class="slider-adding-list">
               <li class="slider-adding-item slider-adding-current adding-delivery">
                 <h3 class="slider-title heading">Доставка</h3>
@@ -238,9 +244,9 @@
           </div>
         </section>
         <div class="about-block">
-          <div class="delivery">
+          <span class="delivery">
             <a href="#" class="delivery-link">Доставим редкий товар под заказ</a>
-          </div>
+          </span>
           <div class="about-info-block">
             <section class="about">
               <h2 class="about-heading heading">О нас</h2>
