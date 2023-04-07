@@ -837,7 +837,7 @@ body {
   display: flex;
   width: 1160px;
   margin: 0 auto;
-  gap: 108px;
+  gap: 149px;
 }
 
 .about-heading {
@@ -855,13 +855,15 @@ body {
   color: #444444;
 }
 
+
 .about-list {
   margin: 0;
   padding: 0;
-  margin-left: 21px;
-  row-gap: 19px;
+  margin-left: 37px;
+  row-gap: 17px;
   display: flex;
   flex-direction: column;
+  margin-top: -4px;
 }
 
 .about-item {
@@ -895,6 +897,9 @@ flex-direction: column;
   padding: 0;
   padding-bottom: 18px;
   color: #444444;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
 
 
 }
