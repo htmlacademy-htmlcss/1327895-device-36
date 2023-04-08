@@ -17,8 +17,10 @@
           <div class="navigation-block">
             <form action="https://echo.htmlacademy.ru/" class="navigation-form" method="get">
               <label class="visually-hidden" for="search">Введите текст для поиска</label>
-              <input class="navigation-search" id="search" type="text" name="search" placeholder="Поиск по сайту"
-                required>
+              <span class="navigation-search-wrapper">
+                <input class="navigation-search" id="search" type="text" name="search" placeholder="Поиск по сайту"
+                  required>
+              </span>
               <button class="search-button button">Найти</button>
             </form>
             <ul class="user-navigation">
@@ -98,7 +100,9 @@
                     <p class="slider-heading heading">Порхает как бабочка, жалит как пчела!</p>
                     <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                       замаскированным под стандартную камеру.</p>
-                    <a href="#" class="slider-button-detailed button">Подробнее</a>
+                    <a href="#" class="slider-button-detailed button">
+                      <span class="button-name">Подробнее</span>
+                    </a>
                     <ul class="product-characteristics-list">
                       <li class="product-characteristics-item">
                         <p class="product-characteristics-meaning">800 м</p>
