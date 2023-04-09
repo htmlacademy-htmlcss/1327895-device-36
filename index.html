@@ -21,7 +21,7 @@
                 <input class="navigation-search" id="search" type="text" name="search" placeholder="Поиск по сайту"
                   required>
               </span>
-              <button class="search-button button">Найти</button>
+              <button class="search-button">Найти</button>
             </form>
             <ul class="user-navigation">
               <li class="user-navigation-item">
@@ -98,9 +98,9 @@
                   </div>
                   <div class="slider-text-block">
                     <p class="slider-heading heading">Порхает как бабочка, жалит как пчела!</p>
-                    <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+                    <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                       замаскированным под стандартную камеру.</p>
-                    <a href="#" class="slider-button-detailed button">
+                    <a href="#" class="slider-button-detailed button-show button">
                       <span class="button-name">Подробнее</span>
                     </a>
                     <ul class="product-characteristics-list">
@@ -122,7 +122,7 @@
                   </div>
                   <div class="slider-text-block">
                     <p class="slider-heading heading">Худеем правильно!</p>
-                    <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
+                    <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
                       занятия и соблюдать диету.</p>
                     <a href="#" class="slider-button-detailed button">
                       <span class="button-name">Подробнее</span>
@@ -142,7 +142,7 @@
                   </div>
                   <div class="slider-text-block">
                     <p class="slider-heading heading">Делай селфи, как Бен Стиллер!</p>
-                    <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь
+                    <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь
                       (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
                     <a href="#" class="slider-button-detailed button">Подробнее</a>
                     <ul class="product-characteristics-list">
@@ -215,24 +215,28 @@
         <section class="adding">
           <h2 class="visually-hidden">Дополнительные услуги</h2>
           <div class="slider-adding">
-            <div class="slider-pasganation-block">
-              <ol class="slider-service-paganation">
-                <li class="slider-service-item">
-                  <a href="#" class="slider-service-button">Доставка</a>
-                </li>
-                <li class="slider-service-item">
-                  <a href="#" class="slider-service-button">Гарантия</a>
-                </li>
-                <li class="slider-service-item">
-                  <a href="#" class="slider-service-button">Кредит</a>
-                </li>
-              </ol>
-            </div>
+            <ol class="slider-service-paganation">
+              <li class="slider-service-item">
+                <a href="#" class="slider-service-button button-show">
+                  <span class="button-name">Доставка</span>
+                </a>
+              </li>
+              <li class="slider-service-item">
+                <a href="#" class="slider-service-button button-show">
+                  <span class="button-name">Гарантия</span>
+                </a>
+              </li>
+              <li class="slider-service-item">
+                <a href="#" class="slider-service-button button-show">
+                  <span class="button-name">Кредит</span>
+                </a>
+              </li>
+            </ol>
             <ul class="slider-adding-list">
               <li class="slider-adding-item slider-adding-current adding-delivery">
                 <h3 class="slider-title heading">Доставка</h3>
-                <p class="slider-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
-                  бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                <p class="slider-description">Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду
+                  совершенно бесплатно! Ведь<br>мы неплохо заработаем, поднимая его на ваш этаж.</p>
               </li>
               <li class="slider-adding-item adding-warranty">
                 <h3 class="slider-title heading">Гарантия</h3>
@@ -248,9 +252,9 @@
           </div>
         </section>
         <div class="about-block">
-          <span class="delivery">
-            <a href="#" class="delivery-link">Доставим редкий товар под заказ</a>
-          </span>
+          <div class="delivery">
+            <a href="#" class="delivery-link button">Доставим редкий товар под заказ</a>
+          </div>
           <div class="about-info-block">
             <section class="about">
               <h2 class="about-heading heading">О нас</h2>
@@ -263,7 +267,9 @@
                 <li class="about-item">СДИК</li>
                 <li class="about-item">ТоксБерри</li>
               </ul>
-              <a href="#" class="about-link">Подробнее о нас</a>
+              <a href="#" class="about-link button-show button">
+                <span class="button-name">Подробнее о нас</span>
+              </a>
             </section>
             <section class="contacts">
               <h2 class="contacts-heading heading">Контакты</h2>
@@ -276,7 +282,9 @@
               </a>
               <h3 class="contacts-title">Время работы</h3>
               <span class="contacts-schedule">пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00</span>
-              <a href="#" class="contacts-link">Напишите нам</a>
+              <a href="#" class="contacts-link button-show button">
+                <span class="button-name">Напишите нам</span>
+              </a>
             </section>
           </div>
         </div>
@@ -286,9 +294,9 @@
             также акции, спецпредложения и вот это вот всё.</p>
           <form class="mailing__form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="mailing">Ваша электонная почта</label>
-            <input class="mailing__mail" id="mailig" type="text" value="" name="email" placeholder="Ваш e-mail"
+            <input class="mailing__mail" id="mailing" type="text" value="" name="email" placeholder="Ваш e-mail"
               required>
-            <button class="mailing__button button-blue button" type="submit">Подписаться</button>
+            <button class="mailing__button button" type="submit">Подписаться</button>
           </form>
           <span class="mailig-info">Это бесплатно</span>
         </section>
@@ -301,13 +309,13 @@
       <p class="footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       <ul class="footer-list">
         <li class="footer-item">
-          <a href="#" class="footer-link">Доставка</a>
+          <a href="#" class="footer-link button">Доставка</a>
         </li>
         <li class="footer-item">
-          <a href="#" class="footer-link">Гарантия</a>
+          <a href="#" class="footer-link button">Гарантия</a>
         </li>
         <li class="footer-item">
-          <a href="#" class="footer-link">Контакты</a>
+          <a href="#" class="footer-link button">Контакты</a>
         </li>
       </ul>
       <ul class="socials">
