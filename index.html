@@ -289,16 +289,23 @@
           </div>
         </div>
         <section class="mailing">
-          <h2 class="mailing-heading heading">Подпишитесь на рассылку</h2>
-          <p class="mailing-text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а
-            также акции, спецпредложения и вот это вот всё.</p>
-          <form class="mailing__form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden" for="mailing">Ваша электонная почта</label>
-            <input class="mailing__mail" id="mailing" type="text" value="" name="email" placeholder="Ваш e-mail"
-              required>
-            <button class="mailing__button button" type="submit">Подписаться</button>
-          </form>
-          <span class="mailig-info">Это бесплатно</span>
+          <div class="mailing-wrapper">
+            <div class="mailing-text">
+              <h2 class="mailing-heading heading">Подпишитесь<br>на рассылку</h2>
+              <p class="mailing-description">Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами,
+                распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+            </div>
+            <div class="mailing-form-block">
+              <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="visually-hidden" for="mailing">Ваша электонная почта</label>
+                <input class="mailing-mail" id="mailing" type="text" value="" name="email" placeholder="Ваш e-mail"
+                  required>
+                <button class="mailing-button button" type="submit">Подписаться</button>
+              </form>
+              <span class="mailing-info">Это бесплатно</span>
+            </div>
+
+          </div>
         </section>
       </main>
     </div>
