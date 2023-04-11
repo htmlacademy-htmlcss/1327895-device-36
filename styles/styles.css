@@ -1201,5 +1201,65 @@ text-decoration: none;
   left: 0;
   width: 14px;
   height: 14px;
+}
+
+.page-footer {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.footer-logo {
+
+}
+
+.footer-address-block {
+max-width: 240px;
+}
+
+.footer-address {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-navigation {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.footer-block-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #7c7c7c;
+}
+
+
+.footer-phone-link {
+  display: inline-block;
+}
+
+
+.footer-link-delover {
 
 }
