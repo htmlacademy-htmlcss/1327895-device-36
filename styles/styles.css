@@ -1204,30 +1204,45 @@ text-decoration: none;
 }
 
 .page-footer {
+  background-color:#444444;
+}
+
+.footer-wrapper {
   width: 1160px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-
 }
 
-.footer-logo {
-
+.header-logo-image {
+  fill: #ffc700;
 }
 
 .footer-address-block {
-max-width: 240px;
+  max-width: 240px;
 }
 
 .footer-address {
   margin: 0;
   padding: 0;
+  max-width: 245px;
+  color: #ffffff;
 }
 
 .footer-navigation {
   display: flex;
   align-items: center;
-  gap: 60px;
+  justify-content: space-between;
+}
+
+.footer-list {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+.footer-link {
+  color: #ffffff;
 }
 
 .footer-block-links {
@@ -1257,9 +1272,12 @@ max-width: 240px;
 
 .footer-phone-link {
   display: inline-block;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 
 .footer-link-delover {
-
+  fill:#ffc700;
 }
