@@ -969,6 +969,10 @@ text-decoration: none;
   background-position: center center;
 }
 
+.delivery-link:hover::before {
+  background-color:#ffc700;
+}
+
 .about {
   gap: 30px;
   display: flex;
@@ -1175,6 +1179,7 @@ text-decoration: none;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+  background-color: transparent;
 }
 
 .mailing-button {
@@ -1210,12 +1215,23 @@ text-decoration: none;
 .footer-wrapper {
   width: 1160px;
   margin: 0 auto;
+  padding-top: 62px;
+  padding-bottom: 62px;
   display: flex;
   flex-direction: column;
 }
 
+.footer-logo {
+  display: block;
+  width: 145px;
+  height: 36px;
+  margin-left: 2px;
+  margin-bottom: 36px
+}
+
 .header-logo-image {
   fill: #ffc700;
+
 }
 
 .footer-address-block {
@@ -1223,26 +1239,34 @@ text-decoration: none;
 }
 
 .footer-address {
+
   margin: 0;
   padding: 0;
   max-width: 245px;
   color: #ffffff;
+
 }
 
 .footer-navigation {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: start;
+  column-gap: 110px
+  /* justify-content: space-between; */
 }
 
 .footer-list {
   display: flex;
+  flex-wrap: wrap;
+  width: 515px;
   list-style: none;
-  gap: 35px;
+  gap: 26px;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-link {
   color: #ffffff;
+  padding: 3px;
 }
 
 .footer-block-links {
