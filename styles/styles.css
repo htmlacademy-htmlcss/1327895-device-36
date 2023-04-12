@@ -139,8 +139,13 @@ body {
   font-style: normal;
   font-size: 16px;
   font-weight: 400;
-  z-index: 2;
+  z-index: 1;
   outline: none;
+}
+
+.navigation-search:disabled {
+  cursor: default;
+  opacity: 0.3;
 }
 
 .navigation-search-wrapper {
@@ -151,9 +156,11 @@ body {
 .navigation-search-wrapper:focus-within {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
+  z-index: 2;
 }
 
 .search-button {
+  position: relative;
   display: inline-block;
   box-sizing: border-box;
   height: 40px;
@@ -169,7 +176,44 @@ body {
   color: #000000;
   background-color: #ffe17f;
   cursor: pointer;
+  outline: none;
+  z-index: 1;
 }
+
+.search-button:hover {
+  background-color:#000000;
+  color:#ffffff;
+}
+
+.search-button:active {
+  color:rgba(255, 255, 255, 0.3);
+}
+
+.search-button-wrapper {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.search-button-wrapper:focus-within {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 3px;
+  z-index: 2;
+}
+
+.search-button:disabled {
+  cursor: default;
+  opacity: 0.3;
+}
+
+.search-button:disabled:hover {
+  border: 2px solid #000000;
+  border-left: transparent;
+  color: #000000;
+  background-color: #ffe17f;
+
+}
+
 
 .user-navigation {
   display: flex;
@@ -391,6 +435,7 @@ body {
   column-gap: 45px;
   row-gap: 20px;
   box-sizing: border-box;
+  justify-content: flex-end;
 }
 
 .products-item-link {
@@ -431,7 +476,7 @@ body {
   z-index: 10;
 }
 
-.slider-item:nth-child(1)::before {
+.slider-first::before {
   content: "01";
   position: absolute;
   background-color: #ffe17f;
@@ -451,7 +496,7 @@ body {
   z-index: 1;
 }
 
-.slider-ithem:nth-child(2)::before {
+.slider-second::before {
   content: "02";
   position: absolute;
   background-color: #ffe17f;
@@ -468,11 +513,11 @@ body {
   line-height: 133px;
   color: #ffffff;
   text-align: right;
-  z-index: 9;
+  z-index: 1;
 }
 
-.slider-ithem:nth-child(3)::before {
-  content: "02";
+.slider-third::before {
+  content: "03";
   position: absolute;
   background-color: #ffe17f;
   height: 118px;
@@ -488,7 +533,7 @@ body {
   line-height: 133px;
   color: #ffffff;
   text-align: right;
-  z-index: 9;
+  z-index: 1;
 }
 
 .slider-item-current {
@@ -501,7 +546,7 @@ body {
 }
 
 .slider-image-block {
-  margin-top: -31px;
+  margin-top: -33px;
   position: relative;
   z-index: 10;
 }
@@ -529,6 +574,8 @@ body {
   color: #444444;
 }
 
+
+
 .product-characteristics-list {
   list-style: none;
   margin: 0;
@@ -536,6 +583,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   column-gap: 20px;
+}
+
+.characteristics-third {
+  column-gap: 42px;
 }
 
 .product-characteristics-meaning {
