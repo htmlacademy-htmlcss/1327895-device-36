@@ -182,12 +182,12 @@ body {
 }
 
 .search-button:hover {
-  background-color:#000000;
-  color:#ffffff;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .search-button:active {
-  color:rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .search-button-wrapper {
@@ -348,10 +348,83 @@ body {
 .popover-basket {
   position: absolute;
   /* display: none; */
-  background-color: #1a1a1a;
   width: 320px;
+  display: flex;
+  flex-direction: column;
   z-index: 16;
+  background-color: #000000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
+.basket-list-products {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.basket-item-product {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.basket-item-product + .basket-item-product  {
+  border-top: 1px dashed #1a1a1a;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.basket-link-product {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color:#000000;
+  box-sizing: border-box;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.basket-product-name {
+  display: inline-block;
+  max-width: 170px;
+  margin-left: 23px;
+}
+
+.basket-info {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+  padding: 20px;
+  color: #ffffff;
+  background-color:#1a1a1a;
+}
+
+.basket-info-quantity {
+  max-width: 120px;
+}
+
+.basket-info-price {
+  max-width: 150px;
+}
+
+.basket-open {
+  display: inline-block;
+  max-width: 280px;
+  margin: 20px 20px 0 20px;
+  padding: 13px 20px 14px;
+  box-sizing: border-box;
+  border: none;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.basket-open:hover {
+  background-color: #ffe17f;
+}
+
+.basket-open:active {
+  color:rgb(0, 0, 0, 0.3);
 }
 
 .navigation-catalog {
@@ -362,6 +435,7 @@ body {
 
 .navigation-dropdown {
   position: relative;
+  z-index: 100;
 }
 
 .navigation-catalog-link {
@@ -406,6 +480,7 @@ body {
 .navigation-catalog-link:hover::after {
   opacity: 1;
 }
+
 .navigation-link {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -415,6 +490,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 3.6px;
   color: #000000;
+  /* display: inline-block; */
 }
 
 .navigation-site-link:hover {
@@ -435,10 +511,10 @@ body {
   position: absolute;
   width: 1160px;
   box-sizing: border-box;
-  left: 0;
-  margin-top: 15px;
+  left: -60px;
+  top: 100%;
   padding-bottom: 57px;
-  transform: translateX(-60px);
+  /* transform: translateX(-60px); */
   gap: 60px;
   background-color: #ffe17f;
   z-index: 15;
@@ -675,15 +751,15 @@ body {
 }
 
 .button {
-display: inline-block;
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 800;
-font-size: 18px;
-line-height: 21px;
-letter-spacing: 0.2em;
-text-transform: uppercase;
-text-decoration: none;
+  display: inline-block;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .button-name {
@@ -961,7 +1037,7 @@ text-decoration: none;
   display: block;
   width: 8px;
   height: 100%;
-  background-color:#000000;
+  background-color: #000000;
   left: 100%;
   top: 50%;
   transform: translateY(-50%);
@@ -999,15 +1075,16 @@ text-decoration: none;
 
 .service-button-active {
   width: 278px;
-  background-color:#000000;
+  background-color: #000000;
   color: #ffe17f;
   padding-left: 15px;
   text-align: left;
   transition: all 0.5s;
 }
+
 .service-button-active:hover {
   padding-left: 50px;
-  background-color:#000000;
+  background-color: #000000;
 }
 
 .service-button-active:focus {
@@ -1025,7 +1102,7 @@ text-decoration: none;
 }
 
 .slider-adding-list {
-  width: 880px ;
+  width: 880px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1062,7 +1139,7 @@ text-decoration: none;
 }
 
 .adding-delivery::after {
-  content:"";
+  content: "";
   position: absolute;
   width: 136px;
   height: 164px;
@@ -1098,7 +1175,7 @@ text-decoration: none;
 .delivery-link {
   display: inline-block;
   width: 100%;
-  color:#000000;
+  color: #000000;
   font-size: 20px;
   padding-top: 41px;
   padding-bottom: 38px;
@@ -1116,14 +1193,14 @@ text-decoration: none;
   left: 0;
   width: 125px;
   height: 100%;
-  background-color:#ffe17f;
+  background-color: #ffe17f;
   background-image: url(../images/car.svg);
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .delivery-link:hover::before {
-  background-color:#ffc700;
+  background-color: #ffc700;
 }
 
 .delivery-link::after {
@@ -1150,6 +1227,7 @@ text-decoration: none;
 .delivery-link:hover::after {
   color: rgb(0, 0, 0);
 }
+
 .delivery-link:active {
   opacity: 0.3;
 }
@@ -1175,12 +1253,12 @@ text-decoration: none;
   position: relative;
 }
 
-.about-heading:before{
-  content:"";
+.about-heading:before {
+  content: "";
   position: absolute;
   height: 7px;
   width: 84px;
-  background-color:#000000;
+  background-color: #000000;
   transform: translateY(-100%);
   top: -40px;
 }
@@ -1226,7 +1304,7 @@ text-decoration: none;
 
 .about-link {
   position: relative;
-  color:#000000;
+  color: #000000;
   padding: 11px 19px 11px 24px;
   box-sizing: border-box;
   max-width: 270px;
@@ -1234,17 +1312,16 @@ text-decoration: none;
 
 .contacts-link {
   position: relative;
-  color:#000000;
+  color: #000000;
   padding: 11px 30px 11px 34px;
   max-width: 260px;
   box-sizing: border-box;
 }
 
 .contacts {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   width: 532px;
-
 }
 
 .contacts-heading {
@@ -1252,12 +1329,12 @@ text-decoration: none;
   margin-bottom: 48px;
 }
 
-.contacts-heading:before{
-  content:"";
+.contacts-heading:before {
+  content: "";
   position: absolute;
   height: 7px;
   width: 84px;
-  background-color:#000000;
+  background-color: #000000;
   transform: translateY(-100%);
   top: -40px;
 }
@@ -1293,8 +1370,8 @@ text-decoration: none;
 
 .contacts-phone {
   position: relative;
-  width: 155px;
-  height: 21px;
+  /* width: 155px;
+  height: 21px; */
   margin-bottom: 30px;
   color: #444444;
   font-family: 'Rubik';
@@ -1303,6 +1380,7 @@ text-decoration: none;
   font-size: 18px;
   line-height: 30px;
   outline: none;
+  text-underline-offset: 5px;
 }
 
 .contacts-phone:focus::before {
@@ -1325,8 +1403,9 @@ text-decoration: none;
   line-height: 30px;
   color: #444444;
 }
+
 .mailing {
-  background-color:#f0f0f0;
+  background-color: #f0f0f0;
 }
 
 .mailing-wrapper {
@@ -1364,6 +1443,7 @@ text-decoration: none;
   display: flex;
   justify-content: center;
 }
+
 .mailing-mail {
   width: 559px;
   height: 56px;
@@ -1381,12 +1461,12 @@ text-decoration: none;
 }
 
 .mailing-mail:focus {
-  background-color:#dcdcdc;
+  background-color: #dcdcdc;
   outline: none;
 }
 
 .mailing-mail:disabled {
-  cursor:default;
+  cursor: default;
   opacity: 0.3;
 }
 
@@ -1402,12 +1482,13 @@ text-decoration: none;
 }
 
 .mailing-button:hover {
-  background-color:#000000;
-  color:#ffffff;
-  border-color:#000000;
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #000000;
 }
+
 .mailing-button:active {
-  background-color:#000000;
+  background-color: #000000;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1441,7 +1522,7 @@ text-decoration: none;
 }
 
 .page-footer {
-  background-color:#444444;
+  background-color: #444444;
 }
 
 .footer-wrapper {
@@ -1494,8 +1575,9 @@ text-decoration: none;
 .footer-navigation {
   display: flex;
   align-items: start;
-  column-gap: 110px
+  column-gap: 110px;
   /* justify-content: space-between; */
+  margin-bottom: 58px;
 }
 
 .footer-list {
@@ -1514,7 +1596,7 @@ text-decoration: none;
 }
 
 .footer-link:hover {
-  color:#ffc700;
+  color: #ffc700;
   text-decoration: underline;
 }
 
@@ -1528,7 +1610,8 @@ text-decoration: none;
 
 .footer-block-links {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  padding-left: 504px;
 }
 
 .socials {
@@ -1538,6 +1621,7 @@ text-decoration: none;
   gap: 15px;
   margin: 0;
   padding: 0;
+  width: 150px;
 }
 
 .socials-link {
@@ -1560,7 +1644,7 @@ text-decoration: none;
   background-color: #ffc700;
 }
 
-.socials-link:active .social-icon{
+.socials-link:active .social-icon {
   fill-opacity: 0.3;
 }
 
@@ -1585,8 +1669,9 @@ text-decoration: none;
   line-height: 20px;
   outline: none;
 }
+
 .footer-phone-link:hover {
-  color:#ffc700;
+  color: #ffc700;
   text-decoration: underline;
 }
 
@@ -1607,13 +1692,13 @@ text-decoration: none;
   outline-offset: 2px;
 }
 
-.footer-link-delover{
+.footer-link-delover {
   position: relative;
   outline: none;
 }
 
 .footer-delover-image {
-  fill:#ffc700;
+  fill: #ffc700;
 }
 
 .footer-link-delover:hover .footer-delover-image {
