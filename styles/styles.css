@@ -1109,6 +1109,7 @@ body {
 }
 
 .slider-adding-item {
+  position: relative;
   display: none;
   margin: 0;
   padding: 0;
@@ -1134,10 +1135,6 @@ body {
   line-height: 30px;
 }
 
-.adding-delivery {
-  position: relative;
-}
-
 .adding-delivery::after {
   content: "";
   position: absolute;
@@ -1151,18 +1148,30 @@ body {
   z-index: 10;
 }
 
-.adding-warranty {
+.adding-warranty::after {
+  content: "";
   position: absolute;
+  width: 171px;
+  height: 195px;
   background-image: url(../images/warranty.svg);
   background-repeat: no-repeat;
-  background-position-x: 99%;
-  background-position-y: 95%;
+  right: 0;
+  top: 45px;
   z-index: 10;
 }
 
-.adding-credit {
-  display: none;
+.adding-credit::after {
+  content: "";
+  position: absolute;
+  width: 156px;
+  height: 188px;
+  background-image: url(../images/credit.svg);
+  background-repeat: no-repeat;
+  right: 0;
+  top: 45px;
+  z-index: 10;
 }
+
 
 .delivery {
   position: relative;
