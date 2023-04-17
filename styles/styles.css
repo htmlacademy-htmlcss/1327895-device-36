@@ -1857,7 +1857,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-left: 63px;
+  margin-left: 60px;
   display: flex;
 }
 
@@ -1905,7 +1905,6 @@ body {
   width: 1160px;
   margin: 0 auto;
   display: flex;
-  column-gap: 60px;
 }
 
 .filter {
@@ -1928,7 +1927,7 @@ body {
 .filter-heading {
   margin: 0;
   padding: 0;
-  margin-top: 25px;
+  margin-top: 26px;
   margin-bottom: 71px;
 
 }
@@ -1951,11 +1950,11 @@ body {
   color: #000000;
 }
 
-.filter-name::before {
+.name-color::before {
   content: "";
   position: absolute;
   width: 200px;
-  height: 3px;
+  height: 1px;
   background-color:#000000;
   top: -14px;
   left: 0;
@@ -2033,16 +2032,70 @@ body {
   line-height: 20px;
   color: #000000;
   opacity: 0.3;
+  display: flex;
+}
+
+.filter-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-item {
+  margin-bottom: 17px;
+}
+
+.filter-item:last-child {
+  margin-bottom: 0;
+}
+
+.filter-label {
+  position: relative;
+  padding-left: 36px;
+  display: block;
+}
+
+.filter-control-mark {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border:2px solid #cccccc;
+  border-radius: 4px;
+}
+
+ .filter-control [type="checkbox"]:checked + .filter-control-mark{
+  border-color:#000000;
+}
+
+.filter-control [type="checkbox"]:checked + .filter-control-mark::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: url(../images/checkbox.svg) no-repeat;
+  top: 3px;
+  left: 3px;
+}
+
+.filter-button-submit {
+  display: inline-block;
+  position: relative;
+  border: none;
+  padding: 10px 45px 10px 48px;
+}
+
+.filter-label {
+  font-weight: 400;
+font-size: 16px;
+line-height: 20px;
 }
 
 .sorting-wrapper {
   display: flex;
   align-items:center;
   justify-content: space-between;
-  padding-top: 21px;
-  padding-bottom: 21px;
-  padding-left: 43px;
-  padding-right: 60px;
+  padding: 21px 40px;
 }
 
 .product-sorting {
@@ -2059,8 +2112,7 @@ body {
 }
 
 .catalog-distribution-block {
-  width: 30px;
-  height: 60px;
+  width: 60px;
   display: flex;
   align-items: flex-start;
 }
@@ -2102,7 +2154,11 @@ body {
   list-style: none;
   padding: 70px 40px;
   margin: 0;
+}
 
+.catalog-sorting {
+  width: 141px;
+  margin: 0 auto;
 }
 
 .catalog-sorting-result {
