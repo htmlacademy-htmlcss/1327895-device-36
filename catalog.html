@@ -181,20 +181,25 @@
               </form>
             </section>
             <section class="catalog-sorting-result">
-              <h2 class="sorting-heading catalog-title">Сортировка:</h2>
-              <div class="catalog-sorting">
-                <select class="product-sorting" name="sorting">
-                  <option class="product-classification" value="popular" selected>Популярные</option>
-                  <option class="product-classification" value="inexpensive">Недорогие</option>
-                  <option class="product-classification" value=" feedback">Больше отзывов</option>
-                </select>
-                <a href="#" class="catalog-distribution-button catalog-distribution-up">
-                  <span class="visually-hidden">Вверх</span>
-                </a>
-                <a href="#" class="catalog-distribution-button catalog-distribution-up">
-                  <span class="visually-hidden">Вниз</span>
-                </a>
+              <div class="sorting-wrapper">
+                <h2 class="sorting-heading catalog-title">Сортировка:</h2>
+                <div class="catalog-sorting">
+                  <select class="product-sorting" name="sorting">
+                    <option class="product-classification" value="popular" selected>Популярные</option>
+                    <option class="product-classification" value="inexpensive">Недорогие</option>
+                    <option class="product-classification" value=" feedback">Больше отзывов</option>
+                  </select>
+                </div>
+                <div class="catalog-distribution-block">
+                  <a href="#" class="catalog-distribution-button catalog-distribution-up">
+                    <span class="visually-hidden">Вверх</span>
+                  </a>
+                  <a href="#" class="catalog-distribution-button catalog-distribution-down">
+                    <span class="visually-hidden">Вниз</span>
+                  </a>
+                </div>
               </div>
+
               <ul class="catalog-product-list">
                 <li class="catalog-product-item">
                   <a href="#" class="catalog-product-link">
