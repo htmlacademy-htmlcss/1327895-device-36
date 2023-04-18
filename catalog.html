@@ -175,15 +175,24 @@
                 </fieldset>
                 <fieldset class="filter-group">
                   <legend class="filter-name name-bluetooth">Bluetooth</legend>
-                  <label class="filter-radio">
-                    <input type="radio" class="filter-label-input visually-hidden" name="bluetooth" value="yes" checked
-                      required>
-                    <span class="filter-label">Да</span>
-                  </label>
-                  <label class="filter-radio">
-                    <input type="radio" class="filter-label-input visually-hidden" name="bluetooth" value="no" required>
-                    <span class="filter-label">Нет</span>
-                  </label>
+                  <ul class="filter-list">
+                    <li class="filter-item">
+                      <label class="filter-control">
+                        <input type="radio" class="filter-label-input visually-hidden" name="bluetooth" value="yes"
+                          checked required>
+                        <span class="filter-control-mark"></span>
+                        <span class="filter-label">Есть</span>
+                      </label>
+                    </li>
+                    <li class="filter-item">
+                      <label class="filter-control">
+                        <input type="radio" class="filter-label-input visually-hidden" name="bluetooth" value="no"
+                          required>
+                        <span class="filter-control-mark"></span>
+                        <span class="filter-label">Нет</span>
+                      </label>
+                    </li>
+                  </ul>
                 </fieldset>
                 <button class="filter-button-submit button button-show" type="submit">
                   <span class="button-name">Показать</span>
