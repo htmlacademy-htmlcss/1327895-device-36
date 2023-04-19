@@ -105,10 +105,10 @@
         <div class="filter-container">
           <div class="filter-wrapper">
             <section class="filter">
-              <h2 class="filter-heading catalog-title">Фильтр</h2>
+              <h2 class="filter-heading catalog-title">Фильтр:</h2>
               <form action="https://echo.htmlacademy.ru/" class="filter-catalog" method="get">
-                <fieldset class="filter-group">
-                  <legend class="filter-name name-price">Стоимость</legend>
+                <fieldset class="filter-group group-price">
+                  <legend class="filter-name">Стоимость</legend>
                   <div class="range">
                     <div class="range-scale">
                       <div class="range-bar" style="left: 0; width: 119px;">
@@ -120,24 +120,22 @@
                         </button>
                       </div>
                     </div>
-
-
                   </div>
                   <div class="range-control-block">
-                    <label class="range-control-value">от
+                    <label class="range-control-value value-min">от
                       <input class="range-input range-control-min" name="min-price" placeholder="" value="0"
                         type="number">
                     </label>
 
-                    <label class="range-control-value">до
+                    <label class="range-control-value value-max">до
                       <input class="range-input range__control-max" name="max-price" placeholder="" value="5000"
                         type="number">
                     </label>
                   </div>
 
                 </fieldset>
-                <fieldset class="filter-group">
-                  <legend class="filter-name name-color">Цвет</legend>
+                <fieldset class="filter-group group-color">
+                  <legend class="filter-name color-name">Цвет</legend>
                   <ul class="filter-list">
                     <li class="filter-item">
                       <label class="filter-control">
@@ -159,6 +157,13 @@
                       <label class="filter-control">
                         <input class="filter-control-input visually-hidden" type="checkbox" name="color" value="red">
                         <span class="filter-control-mark"></span>
+                        <span class="filter-label">Синий</span>
+                      </label>
+                    </li>
+                    <li class="filter-item">
+                      <label class="filter-control">
+                        <input class="filter-control-input visually-hidden" type="checkbox" name="color" value="red">
+                        <span class="filter-control-mark"></span>
                         <span class="filter-label">Красный</span>
                       </label>
                     </li>
@@ -171,7 +176,7 @@
                     </li>
                   </ul>
                 </fieldset>
-                <fieldset class="filter-group">
+                <fieldset class="filter-group group-bluetooth">
                   <legend class="filter-name name-bluetooth">Bluetooth</legend>
                   <ul class="filter-list">
                     <li class="filter-item">
@@ -202,7 +207,7 @@
                 <div class="catalog-sorting">
                   <select class="product-sorting" name="sorting">
                     <option class="product-classification" value="popular" selected>Популярные</option>
-                    <option class="product-classification" value="inexpensive">Недорогие</option>
+                    <option class="product-classification" value="inexpensive">Дорогие</option>
                     <option class="product-classification" value=" feedback">Дешевые</option>
                   </select>
                 </div>
@@ -254,7 +259,7 @@
                     </a>
                   </li>
                 </ul>
-                <a class="button-more button" href="#">Загрузить еще</a>
+                <a class="button-more button" href="#">Загрузить ещё</a>
                 <div class="catalog-paganation">
                   <a href="#" class="paganation-button button" type="button" disabled>Назад</a>
                   <ol class="paganation-list">
@@ -274,7 +279,7 @@
                       <a href="#" class="paganation-link">15</a>
                     </li>
                   </ol>
-                  <a href="#" class="paganation-button button">Вперед</a>
+                  <a href="#" class="paganation-button button">Вперёд</a>
                 </div>
               </div>
 
@@ -306,10 +311,12 @@
                 <a href="#" class="footer-link button">Контакты</a>
               </li>
             </ul>
-            <a href="tel:+78128121212" class="footer-phone-link">
-              <span class="visually-hidden">Наш телефон</span>
-              <span class="footer-phone">Тел.: +7 (812) 812-12-12</span>
-            </a>
+            <div class="footer-phone-container">
+              <a href="tel:+78128121212" class="footer-phone-link">
+                <span class="visually-hidden">Наш телефон</span>
+                <span class="footer-phone">Тел.: +7 (812) 812-12-12</span>
+              </a>
+            </div>
           </div>
           <div class="footer-block-links">
             <ul class="socials">
