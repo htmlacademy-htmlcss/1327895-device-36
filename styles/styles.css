@@ -1888,15 +1888,6 @@ body {
   display: flex;
 }
 
-.breadcrumb-link {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-decoration: none;
-  color:#000000;
-}
-
 .breadcrumb-item {
   display: flex;
   align-items: center;
@@ -1912,16 +1903,35 @@ body {
   margin-left: 16px;
 }
 
+.breadcrumb-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color:#000000;
+}
+
 .breadcrumb-link:hover {
-  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .breadcrumb-link:active {
-  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.6);
 }
+
 
 .breadcrumb-link:focus {
   outline: 2px solid #af4fff;
+}
+
+.breadcrumb-link:disabled {
+  color: rgba(0, 0, 0, 1);
+}
+
+.breadcrumb-link:disabled:hover {
+  color: rgba(0, 0, 0, 1);
+  cursor: default;
 }
 
 .filter-container {
@@ -2062,7 +2072,15 @@ body {
   justify-content: flex-start;
   position: absolute;
   top: 12px;
-
+}
+.range-control-value {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  display: flex;
 }
 
 .range-input {
@@ -2076,16 +2094,20 @@ body {
   background-color: transparent;
   }
 
-.range-control-value {
-  font-family: 'Rubik', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: #000000;
-  opacity: 0.3;
-  display: flex;
-}
+  .range-input,
+  .range-control-text {
+    opacity: 0.3;
+  }
+
+   .range-control-value:focus-within::before {
+    content: "";
+    position: absolute;
+    outline: 2px solid #af4fff;
+    width: 70px;
+    height: 20px;
+    top: 0;
+  }
+
 
 .value-min {
   position: absolute;
@@ -2095,6 +2117,10 @@ body {
 .value-max{
   position: absolute;
   left: 92px
+}
+
+.range-control-value:focus .range-input{
+  outline: 2px solid #af4fff;
 }
 
 .filter-list {
@@ -2307,6 +2333,12 @@ line-height: 20px;
   justify-content: flex-start;
   text-decoration: none;
 }
+
+.catalog-product-link:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
 
 .catalog-product-text {
   display: flex;

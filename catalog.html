@@ -97,7 +97,7 @@
               <a href="#" class="breadcrumb-link">Каталог товаров</a>
             </li>
             <li class="breadcrumb-item">
-              <a class="breadcrumb-link">Моноподы для селфи</a>
+              <a class="breadcrumb-link" disabled>Моноподы для селфи</a>
             </li>
           </ol>
         </div>
@@ -122,12 +122,14 @@
                     </div>
                   </div>
                   <div class="range-control-block">
-                    <label class="range-control-value value-min">от
+                    <label class="range-control-value value-min">
+                      <span class="range-control-text">от</span>
                       <input class="range-input range-control-min" name="min-price" placeholder="" value="0"
                         type="number">
                     </label>
 
-                    <label class="range-control-value value-max">до
+                    <label class="range-control-value value-max">
+                      <span class="range-control-text">до</span>
                       <input class="range-input range__control-max" name="max-price" placeholder="" value="5000"
                         type="number">
                     </label>
