@@ -215,7 +215,6 @@ body {
 
 }
 
-
 .user-navigation {
   display: flex;
   flex-wrap: wrap;
@@ -508,8 +507,6 @@ body {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
-
-
 
 .navigation-catalog {
   display: flex;
@@ -2589,10 +2586,11 @@ color: #444444;
 .field-wrapper {
   display: flex;
   column-gap: 40px;
-  margin-bottom: 44px;
+  margin-bottom: 62px;
 
 }
 .field-group {
+  position: relative;
   display:flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -2648,4 +2646,31 @@ color: #444444;
 
 .field-input-quantity {
   width: 60px;
+}
+
+.field-message {
+  position: absolute;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  left: 0;
+  top: 95px;
+}
+
+.message-mistake {
+  color: #ff3d3d;
+}
+
+.modal-button-submit {
+  position: relative;
+  color: #000000;
+  padding: 11px 30px 11px 34px;
+  max-width: 260px;
+  box-sizing: border-box;
+  display: inline-block;
+  border: none;
+  background-color: #ffffff;
+
 }
