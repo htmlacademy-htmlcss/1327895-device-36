@@ -54,7 +54,6 @@ body {
   overflow: hidden;
 }
 
-
 .main-header {
   position: relative;
   box-sizing: border-box;
@@ -110,6 +109,11 @@ body {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
   z-index: 2;
+}
+
+.logo-link-current:hover .header-logo-image,
+.logo-link-current:active .header-logo-image {
+  opacity: 1;
 }
 
 
@@ -2491,19 +2495,29 @@ body {
 }
 
 .button-more:hover {
-  background-color: #000000;
-  color: #ffffff;
   border-color: #000000;
 }
 
 .button-more:active {
-  background-color: #000000;
-  color: rgba(255, 255, 255, 0.3);
+  border-color: rgba(0, 0, 0, 0.3);
+  color:rgba(0, 0, 0, 0.3);
 }
 
 .button-more:focus {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
+}
+
+.button-more-disabled,
+.button-more-disabled:hover,
+.button-more-disabled:active {
+  border-color: rgb(229, 229, 229, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+  cursor: default;
+}
+
+.button-more-disabled {
+  outline: none;
 }
 
 .catalog-paganation {
@@ -2536,8 +2550,7 @@ body {
 }
 
 .paganation-button-disabled,
-.paganation-button-disabled:hover
- {
+.paganation-button-disabled:hover {
   color: rgb(68, 68, 68, 0.3);
   background-color: #ebebeb;
 }
@@ -2564,12 +2577,12 @@ body {
 
 .paganation-link-current {
   color: rgba(68, 68, 68, 0.6);
+  cursor: default;
 }
 
 .paganation-link:hover {
   color: rgba(68, 68, 68, 0.5);
 }
-
 
 .paganation-link:focus {
   color: rgba(68, 68, 68, 0.1);
@@ -2577,6 +2590,12 @@ body {
 
 .paganation-link:focus {
   outline: 2px solid #af4fff;
+}
+
+.paganation-link-current:hover,
+.paganation-link-current:active {
+  color: rgba(68, 68, 68, 0.6);
+  cursor: default;
 }
 
 .modal-container {
@@ -2590,7 +2609,7 @@ body {
   z-index: 40;
 }
 
-  .modal-close {
+.modal-close {
   display: none;
 }
 
