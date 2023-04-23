@@ -463,22 +463,36 @@
               </p>
             </div>
 
-            <div class="field-wrapper">
+            <div class="field-wrapper field-wrapper-delivery">
               <p class="field-group">
                 <label class="field-title" for="order">Что нужно привезти:</label>
                 <input class="field-input field-input-order" type="text" id="order" placeholder="В свободной форме">
               </p>
-              <div class="field-group">
+              <div class="field-group field-group-quantity">
                 <label class="field-title" for="quantity">Количество:</label>
-                <div class="field-group-quantity">
+                <button class="modal-tooltipe" type="button" aria-labelledby="tooltip-delivery">
+                  <svg class="modal-tooltipe-image" xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                    fill="none">
+                    <circle cx="13" cy="13" r="13" fill="#FFE17F" />
+                    <path fill="#000" d="M14 7h-2v2h2V7ZM14 11h-2v8h2v-8Z" />
+                  </svg>
+                  <span class="modal-tooltip-text" role="tooltip" id="tooltip-delivery">Постараемся найти, сколько
+                    нужно.
+                    Привезём сколько получится по требованиям<br>
+                    к провозу багажа.
+                  </span>
+                </button>
+                <div class="field-group-buttons">
                   <button class="modal-button-quantity" aria-label="Меньше.">
-                    <svg width="16" height="2" viewBox="0 0 16 2" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="modal-button-image" width="16" height="2" viewBox="0 0 16 2"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path d="M16 0H0V2H16V0Z" />
                     </svg>
                   </button>
-                  <input type="number" class="field-input-quantity">
+                  <input type="number" class="field-input field-input-quantity" id="quantity" value="1">
                   <button class="modal-button-quantity" aria-label="Больше.">
-                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="modal-button-image" width="16" height="16" viewBox="0 0 16 16"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" />
                     </svg>
                   </button>
