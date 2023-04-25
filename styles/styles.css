@@ -2241,11 +2241,11 @@ body {
 }
 
 .filter-control:hover {
-  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .filter-control:active {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .filter-control [type="checkbox"]:focus + .filter-control-mark::after,
@@ -2258,6 +2258,16 @@ body {
   left: 0;
   width: 16px;
   height: 16px;
+}
+
+.filter-control-input:disabled + .filter-control-mark,
+ .filter-control-input:disabled ~ .filter-label,
+ .filter-control-input:disabled + .filter-control-mark:hover,
+ .filter-control-input:disabled ~ .filter-label:hover,
+ .filter-control-input:disabled + .filter-control-mark:active,
+ .filter-control-input:disabled ~ .filter-label:active {
+  color: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.1);
 }
 
 .filter-button-submit {
