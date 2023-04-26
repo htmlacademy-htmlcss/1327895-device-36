@@ -45,7 +45,7 @@
                     <ul class="basket-list-products">
                       <li class="basket-item-product">
                         <a href="#" class="basket-link-product">
-                          <img src="/images/products/product-mini-1.jpg" class="basket-image-product" width="39"
+                          <img src="./images/products/product-mini-1.jpg" class="basket-image-product" width="39"
                             height="44" alt="Любительская селфи-палка.">
                           <span class="basket-product-name">Любительская селфи-палка</span>
                         </a>
@@ -60,7 +60,7 @@
                       </li>
                       <li class="basket-item-product">
                         <a href="#" class="basket-link-product">
-                          <img src="/images/products/product-mini-2.jpg" class="basket-image-product" width="39"
+                          <img src="./images/products/product-mini-2.jpg" class="basket-image-product" width="39"
                             height="44" alt="Профессиональная селфи-палка.">
                           <span class="basket-product-name">Профессиональная селфи-палка</span>
                         </a>
@@ -353,7 +353,7 @@
             <div class="mailing-form-block">
               <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
                 <label class="visually-hidden" for="mailing">Ваша электонная почта</label>
-                <input class="mailing-mail" id="mailing" type="e-mail" value="" name="email" placeholder="Ваш e-mail"
+                <input class="mailing-mail" id="mailing" type="email" value="" name="e-mail" placeholder="Ваш e-mail"
                   required>
                 <button class="mailing-button button" type="submit">Подписаться</button>
               </form>
@@ -466,18 +466,22 @@
                 <label class="field-title" for="order">Что нужно привезти:</label>
                 <input class="field-input field-input-order" type="text" id="order" placeholder="В свободной форме">
               </p>
-              <div class="field-group field-group-quantity">
-                <label class="field-title" for="quantity">Количество:</label>
-                <button class="modal-tooltipe" type="button" aria-labelledby="tooltip-delivery">
-                  <svg class="modal-tooltipe-image" xmlns="http://www.w3.org/2000/svg" width="26" height="26"
-                    fill="none">
-                    <circle cx="13" cy="13" r="13" fill="#FFE17F" />
-                    <path fill="#000" d="M14 7h-2v2h2V7ZM14 11h-2v8h2v-8Z" />
-                  </svg>
-                  <span class="modal-tooltip-text" role="tooltip" id="tooltip-delivery">Постараемся найти, сколько
-                    нужно. Привезём сколько получится по требованиям<br>к провозу багажа.
+              <div class="field-group">
+                <span class="field-title field-title-icon">
+                  <label class="field-title" for="quantity">Количество:</label>
+                  <span class="modal-tooltip">
+                    <button class="modal-tooltip-button" type="button" aria-labelledby="tooltip-delivery">
+                      <svg class="modal-tooltip-image" xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                        fill="none">
+                        <circle cx="13" cy="13" r="13" fill="#FFE17F" />
+                        <path fill="#000" d="M14 7h-2v2h2V7ZM14 11h-2v8h2v-8Z" />
+                      </svg>
+                    </button>
+                    <span class="modal-tooltip-text" role="tooltip" id="tooltip-delivery">Постараемся найти, сколько
+                      нужно. Привезём сколько получится по требованиям<br>к провозу багажа.
+                    </span>
                   </span>
-                </button>
+                </span>
                 <div class="field-group-buttons">
                   <button class="modal-button-quantity" aria-label="Меньше.">
                     <svg class="modal-button-image" width="16" height="2" viewBox="0 0 16 2"
