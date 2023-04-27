@@ -2013,7 +2013,7 @@ body {
   height: 19px;
   position: relative;
   width: 200px;
-  margin-bottom: 3px;
+  margin-bottom: 2px;
 }
 
 .range-scale {
@@ -2084,6 +2084,7 @@ body {
   line-height: 20px;
   color: #000000;
   display: flex;
+  align-items: center;
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -2098,14 +2099,17 @@ body {
   font-size: 14px;
   line-height: 20px;
   width: 67px;
+  padding: 0;
+  padding-left: 3px;
+  margin: 0;
   border: none;
   background-color: transparent;
   outline: none;
   appearance: textfield;
 }
 
-.range-input,
-.range-control-text {
+.range-control-text,
+.range-input {
   opacity: 0.3;
 }
 
